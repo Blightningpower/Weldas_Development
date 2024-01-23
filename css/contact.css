@@ -1,0 +1,94 @@
+/* 2.0 */
+.divCenterPage {
+    min-height: 100vh;
+    padding: 2%;
+} 
+
+
+.contactpagina{
+    color: black;
+    margin-top: 19vh;
+    margin-left: 79vh;
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+
+.contacttext{
+    margin-top: 1%;
+    text-align: left; 
+    margin-left: 31%; 
+    font-weight: 100;
+    font-size: x-large;
+}
+
+.google-map {
+    margin-top: -22%; 
+    margin-left: 55%;
+}
+
+.google-map iframe {
+    height: 100%;
+    width: 100%;
+    left: 10%;
+    top: 0;
+    position: absolute;
+}
+
+.weldasgebouw {
+    margin-left: 63vh;
+    height: 32vh;
+    width: 102vh;
+   
+}
+
+.contacttitel {
+    margin-top: 1%;
+    margin-left: 31%; 
+    font-size: x-large; 
+    font-weight: bold;
+}
+
+
+.vestiging {
+    font-size: xx-large;
+    position: absolute;
+    margin-top: 33vh;
+    margin-left: 123vh;
+    font-weight: bold;
+    padding-left: 21vh;
+    padding-right: 19vh;
+    padding-top: 2vh;
+    padding-bottom: 3vh;
+    color: white;
+    background-color: #0A264B;
+}
+
+.openingstijden {
+    font-weight: bold; 
+    margin-left: 31%; 
+    margin-top: -9%;
+    margin-bottom: 10%;
+    font-size: x-large; 
+    text-align: left;
+}
+
+.openingstijdentext {
+    margin-top: -9%; 
+    margin-left: 31%; 
+    margin-bottom: 10%;
+    font-size: x-large;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .rotate {
+    animation: rotation 2s linear;
+  }

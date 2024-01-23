@@ -1,0 +1,687 @@
+/* 2.0 */
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+}
+
+html {
+    min-height: 100%;
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: rgb(250, 225, 0);
+    min-width: -webkit-fill-available;
+    display: flex;
+    padding-top: 0%;
+}
+
+h2 {
+    text-align: center;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+h3 {
+    font-weight: bold;
+    text-align: center;
+}
+
+span {
+    font-style: italic;
+}
+
+p {
+    text-align: center;
+    width: 63%;
+    margin: 5% auto;
+}
+
+.fullHeader {
+    position: fixed;
+    min-width: -webkit-fill-available;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+
+[alt="Weldas_Logo"] {
+    padding: 2%;
+}
+
+.menuOptions {
+    background-color: rgb(10, 33, 65);
+    border-radius: 1px;
+    min-width: -webkit-fill-available;
+    padding-left: 1%;
+}
+
+.menuButton {
+    color: white;
+    padding: 5px;
+    position: relative;
+    display: inline-block;
+}
+
+.menuButton:hover {
+    background-color: #1e3658;
+    padding: 5px;
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #1e3658;
+    min-width: 160px;
+    z-index: 1;
+    margin-top: 3%;
+}
+
+.menuButton:hover .dropdownContent {
+    display: block;
+}
+
+.dropdownContent a {
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdownContent a:hover {
+    background-color: #44669a;
+}
+
+.menu {}
+
+.menuButton.side {
+    font-size: xxx-large;
+}
+
+.wholeSearchbar {
+    min-height: fit-content;
+    margin: 3rem 0px 0px 3rem;
+    padding: 0px;
+}
+
+input.inputSearchBar {
+    padding: 3% 3% 2%;
+    border-radius: 10px;
+    border: none;
+    min-width: 14vw;
+    z-index: 0;
+    position: sticky;
+}
+
+:focus {
+    outline: none;
+}
+
+.searchBarIcon {
+    width: 20px;
+    height: 3vh;
+    margin-right: 7%;
+    margin-top: -10%;
+    float: right;
+    z-index: 1000;
+    position: sticky;
+    background-color: white;
+}
+
+.headerIcons {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 2vw;
+    position: relative;
+    left: 30%;
+}
+
+[alt="Account_Icon"] {
+    padding: 0px 50%;
+}
+
+.imageDiv {
+    position: relative;
+    margin: 3% 0px 0px;
+    min-width: -webkit-fill-available;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+[alt="Weldas_Photo"] {
+    max-width: 60%;
+    padding: 2%;
+    background-color: #fae100;
+    border: 2px solid #0a2141;
+}
+
+.yellowRectangle {
+    background-color: rgb(250, 225, 0);
+    min-width: 100%;
+    min-height: 10vh;
+    margin: 5% 0px;
+}
+
+.categoryDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 30vh;
+}
+
+.categoryLink {
+    padding: 0px 2%;
+}
+
+[alt="Handschoenen"],
+[alt="Kleding"],
+[alt="Hoofdbescherming"],
+[alt="Accesoires"] {
+    max-width: 10vw;
+    max-height: 20vh;
+    padding-bottom: 10%;
+}
+
+[alt="Handschoenen"]:hover,
+[alt="Kleding"]:hover,
+[alt="Hoofdbescherming"]:hover,
+[alt="Accesoires"]:hover {
+    max-width: 10vw;
+    max-height: 20vh;
+    padding-bottom: 10%;
+    border-bottom: thick solid rgb(10, 38, 75);
+    border-top-width: thick;
+    border-right-width: thick;
+    border-left-width: thick;
+}
+
+.homepageText {
+    font-family: "Times New Roman", Times, serif;
+}
+
+.certificationIcons {
+    max-width: fit-content;
+    margin: auto;
+    padding: 5%;
+}
+
+.imageIcon {
+    width: 15%;
+    padding: 0px 5%;
+}
+
+.textdiv1And2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textdiv1,
+.textdiv2 {
+    padding: 0px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+[alt="email_img"],
+[alt="phone_img"] {
+    padding-right: 2%;
+    max-width: 30%;
+}
+
+.weldasButton {
+    padding: 2% 0px;
+    text-decoration: none;
+    background-color: rgb(10, 38, 75);
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    margin: 5%;
+    justify-content: center;
+    width: 11vw;
+}
+
+@media (max-width: 638px) {
+    .weldasButton {
+        min-width: 20vw;
+    }
+}
+
+.weldasButton:hover {
+    background-color: rgb(30, 54, 88);
+}
+
+.weldasButtonText {
+    color: white;
+    font-size: large;
+    padding: 1%;
+    max-width: fit-content;
+    margin: 0px !important;
+}
+
+/* footer */
+
+footer {
+    background-color: #fae100;
+    min-height: -webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.existing-footer-content {
+    /* ... existing footer content styles here ... */
+    position: relative;
+    z-index: 1;
+    background-color: rgb(10, 38, 75);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 100%;
+    overflow: hidden;
+}
+
+.existing-footer-content.slideOut {
+    animation: slideDown 2s;
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    20% {
+        opacity: 1;
+        transform: translateY(30px);
+    }
+
+    40% {
+        opacity: 1;
+        transform: translateY(60px);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(40px);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translateY(50px);
+    }
+
+    80% {
+        opacity: 1;
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(500px);
+    }
+}
+
+.welding-worker {
+    position: absolute;
+    z-index: 2;
+    max-width: 6vw;
+    overflow: hidden;
+}
+
+.welding-worker:hover {
+    cursor: pointer;
+}
+
+[alt="Welding Worker"] {
+    max-width: 100%;
+}
+
+@keyframes welding {
+    0% {
+        opacity: 1;
+        transform: translateY(-10%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(100vw) translateY(-10%);
+    }
+}
+
+.welding-animation {
+    animation: welding 5s linear;
+}
+
+.top-footer::before {
+    /* Add the following properties */
+    content: "";
+    position: relative;
+    max-width: 100%;
+    height: 3px;
+    background-color: #ff9900;
+    display: none;
+    animation-fill-mode: forwards;
+    /* Ensure the animation stays at 100% width after completion */
+}
+
+@keyframes fireLine {
+    0% {
+        opacity: 1;
+        width: 0;
+    }
+
+    100% {
+        opacity: 1;
+        width: 100%;
+    }
+}
+
+.top-footer.fire::before {
+    display: block;
+    animation-name: fireLine;
+    animation-duration: 5s;
+    /* Adjust the duration to match welding animation */
+    animation-timing-function: linear;
+}
+
+.top-footer::before {
+    /* Add the following properties */
+    content: "";
+    position: relative;
+    max-width: 100%;
+    height: 3px;
+    background-color: #ff9900;
+    display: none;
+}
+
+.email-form {
+    display: none;
+    position: relative;
+    top: 0;
+    min-height: 58.098vh;
+    flex-direction: column;
+    align-items: center;
+    color: gold;
+    padding: 2%;
+    min-width: -webkit-fill-available;
+    background-color: #1d9fd4;
+    z-index: 2;
+}
+
+.email-form h2{
+ margin: 0;
+}
+
+.email-form.visible {
+    display: flex;
+    justify-content: center;
+}
+
+.top-footer {
+    position: relative;
+    min-width: -webkit-fill-available;
+}
+
+.footerDiv {
+    display: flex;
+    padding: 8% 0 2%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    min-width: inherit;
+}
+
+.footerButtons {
+    min-width: fit-content;
+    display: flex;
+    flex-flow: column nowrap;
+    min-height: fit-content;
+    padding: 1%;
+    margin-bottom: auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.footerButton {
+    text-decoration: none;
+    background-color: rgb(10, 38, 75);
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 1%;
+    min-width: 8vw;
+    min-height: 7vh;
+    display: flex;
+    align-items: center;
+}
+
+.footerButton:hover {
+    background-color: rgb(30, 54, 88);
+}
+
+.footerButtonsText {
+    color: white;
+    font-size: small;
+    padding: 1%;
+}
+
+.location {
+    line-height: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+[alt="location_Icon"] {
+    max-width: 11%;
+}
+
+.locationText {
+    min-width: 40vw;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.locationText p {
+    margin: 2% auto;
+}
+
+.email,
+.phoneNmbr {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    text-decoration: none;
+    color: white;
+    padding: 3% 0;
+}
+
+[alt="email_Icon"],
+[alt="phone_Icon"] {
+    padding-right: 2%;
+}
+
+.locationAndContacting {
+    display: flex;
+    min-width: 35vw;
+    padding: 1%;
+    font-size: small;
+    flex-direction: column;
+    align-items: center;
+}
+
+.socialsAndFooterLogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 14vh;
+    max-height: 17vh;
+}
+
+.socialIcon {
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+}
+
+[alt="YouTube_Icon"], [alt="Facebook_Icon"], [alt="Weldas_Icon"] {
+    max-width: 3vw;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 26%;
+}
+
+.socialIcon img:hover {
+    content: url('https://i484476.hera.fhict.nl/project-weldas-website/img/youtubeIcon_hover.png');
+}
+
+.socialIcon:nth-child(2) img:hover {
+    content: url('https://i484476.hera.fhict.nl/project-weldas-website/img/facebookIcon_hover.png');
+}
+
+.socialIcon:nth-child(3) img:hover {
+    content: url('https://i484476.hera.fhict.nl/project-weldas-website/img/Weldas \'W\'_hover.png');
+}
+
+[alt="weldasLogoFooter"] {
+    max-width: 50vw;
+}
+
+.copyrightText {
+    font-size: inherit;
+    color: #1d9fd4;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 3px 0 3px 0;
+    font-weight: bolder;
+    margin: 0 !important;
+}
+
+.footerButtonsAndSocials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 45vh;
+}
+
+/* --- */
+
+::-webkit-scrollbar {
+    width: 18px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f120;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #1b9fd6;
+    border: 2px solid #f1f120;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(10, 38, 75);
+}
+
+@media (max-width: 1200px) {
+
+    .wholeSearchbar {
+        display: none;
+    }
+
+    .menuButton {
+        display: none;
+    }
+
+    .menuOptions.show {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(10, 38, 75);
+        flex-direction: column;
+        position: absolute;
+    }
+
+    #menuBtn {
+        width: 24px;
+        height: 20px;
+        position: fixed;
+        cursor: pointer;
+        border: none;
+        background: transparent;
+        padding: 0px;
+        box-sizing: border-box;
+        margin: 3% 0px 0px 93%;
+        z-index: 2000;
+    }
+
+    #menuBtn .open menu {
+        background-color: red;
+    }
+
+    #menuBtn span {
+        position: absolute;
+        left: 0px;
+        width: 100%;
+        height: 3px;
+        background-color: rgb(0, 0, 0);
+        transform-origin: center center;
+        transition: transform 0.2s ease-out 0s;
+    }
+
+    #menuBtn span:nth-child(1) {
+        top: 0px;
+    }
+
+    #menuBtn span:nth-child(2),
+    #menuBtn span:nth-child(3) {
+        top: 8px;
+    }
+
+    #menuBtn span:nth-child(3) {
+        top: 16px;
+    }
+
+    .menu span:nth-child(1) {
+        top: 0px;
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu span:nth-child(2) {
+        transform: scale(0.1, 1);
+    }
+
+    .menu span:nth-child(2),
+    .menu span:nth-child(3) {
+        top: 8px;
+    }
+
+    .menu span:nth-child(3) {
+        top: 16px;
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
