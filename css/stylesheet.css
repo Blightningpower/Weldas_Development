@@ -568,15 +568,15 @@ footer {
 }
 
 .socialIcon img:hover {
-    content: url('../img/youtubeIcon_hover.png');
+    content: url('img/youtubeIcon_hover.png');
 }
 
 .socialIcon:nth-child(2) img:hover {
-    content: url('../img/facebookIcon_hover.png');
+    content: url('img/facebookIcon_hover.png');
 }
 
 .socialIcon:nth-child(3) img:hover {
-    content: url('../img/Weldas \'W\'_hover.png');
+    content: url('img/Weldas \'W\'_hover.png');
 }
 
 [alt="weldasLogoFooter"] {
