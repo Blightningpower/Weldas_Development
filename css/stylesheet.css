@@ -49,6 +49,10 @@ p {
     margin: 5% auto;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 .fullHeader {
     position: fixed;
     min-width: -webkit-fill-available;
@@ -73,6 +77,7 @@ p {
     padding: 5px;
     position: relative;
     display: inline-block;
+    cursor: pointer;
 }
 
 .menuButton:hover {
@@ -103,8 +108,6 @@ p {
 .dropdownContent a:hover {
     background-color: #44669a;
 }
-
-.menu {}
 
 .menuButton.side {
     font-size: xxx-large;
@@ -138,6 +141,7 @@ input.inputSearchBar {
     z-index: 1000;
     position: sticky;
     background-color: white;
+    cursor: pointer;
 }
 
 .headerIcons {
@@ -149,10 +153,12 @@ input.inputSearchBar {
     width: 2vw;
     position: relative;
     left: 30%;
+    cursor: pointer;
 }
 
 [alt="Account_Icon"] {
     padding: 0px 50%;
+    cursor: pointer;
 }
 
 .imageDiv {
@@ -220,11 +226,13 @@ input.inputSearchBar {
     max-width: fit-content;
     margin: auto;
     padding: 5%;
+    cursor: pointer;
 }
 
 .imageIcon {
     width: 15%;
     padding: 0px 5%;
+    cursor: pointer;
 }
 
 .textdiv1And2 {
@@ -494,6 +502,7 @@ footer {
 
 [alt="location_Icon"] {
     max-width: 11%;
+    cursor: pointer;
 }
 
 .locationText {
@@ -519,6 +528,7 @@ footer {
 [alt="email_Icon"],
 [alt="phone_Icon"] {
     padding-right: 2%;
+    cursor: pointer;
 }
 
 .locationAndContacting {
@@ -542,10 +552,12 @@ footer {
     display: flex;
     align-items: center;
     padding: 0 5%;
+    cursor: pointer;
 }
 
 [alt="YouTube_Icon"], [alt="Facebook_Icon"], [alt="Weldas_Icon"] {
     max-width: 3vw;
+    cursor: pointer;
 }
 
 .socials {
@@ -556,15 +568,15 @@ footer {
 }
 
 .socialIcon img:hover {
-    content: url('https://i484476.hera.fhict.nl/project-weldas-website/img/youtubeIcon_hover.png');
+    content: url('../img/youtubeIcon_hover.png');
 }
 
 .socialIcon:nth-child(2) img:hover {
-    content: url('https://i484476.hera.fhict.nl/project-weldas-website/img/facebookIcon_hover.png');
+    content: url('../img/facebookIcon_hover.png');
 }
 
 .socialIcon:nth-child(3) img:hover {
-    content: url('https://i484476.hera.fhict.nl/project-weldas-website/img/Weldas \'W\'_hover.png');
+    content: url('../img/Weldas \'W\'_hover.png');
 }
 
 [alt="weldasLogoFooter"] {

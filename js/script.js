@@ -4,20 +4,20 @@ let shoppingCartIcon = document.getElementById("ShoppingCartIcon");
 
 // Change image source on hover for Account Icon
 accountIcon.addEventListener("mouseover", function() {
-    accountIcon.src = "https://i484476.hera.fhict.nl/project-weldas-website/img/AccountIcon_Hover.png";
+    accountIcon.src = "../img/AccountIcon_Hover.png";
 });
 
 accountIcon.addEventListener("mouseout", function() {
-    accountIcon.src = "https://i484476.hera.fhict.nl/project-weldas-website/img/AccountIcon.png";
+    accountIcon.src = "../img/AccountIcon.png";
 });
 
 // Change image source on hover for Shopping Cart Icon
 shoppingCartIcon.addEventListener("mouseover", function() {
-    shoppingCartIcon.src = "https://i484476.hera.fhict.nl/project-weldas-website/img/ShoppingCartIcon_Hover.png";
+    shoppingCartIcon.src = "../img/ShoppingCartIcon_Hover.png";
 });
 
 shoppingCartIcon.addEventListener("mouseout", function() {
-    shoppingCartIcon.src = "https://i484476.hera.fhict.nl/project-weldas-website/img/ShoppingCartIcon.png";
+    shoppingCartIcon.src = "../img/ShoppingCartIcon.png";
 });
 
 
@@ -40,7 +40,7 @@ window.addEventListener('resize', function() {
     // Check if the width is less than 1200 pixels
     if (width < 1200) {
         // Change the Weldas logo image source
-        logoImg.src = 'https://i484476.hera.fhict.nl/project-weldas-website/img/Weldas Logo small.png';
+        logoImg.src = '../img/Weldas Logo small.png';
 
         // Hide the search bar, header icons, and menu buttons
         searchbar.style.display = 'none';
@@ -50,7 +50,7 @@ window.addEventListener('resize', function() {
         menuButtons.forEach(button => button.classList.add('side'));
     } else {
         // Change the Weldas logo image source back to the original
-        logoImg.src = 'https://i484476.hera.fhict.nl/project-weldas-website/img/Weldas logo.gif';
+        logoImg.src = '../img/Weldas logo.gif';
 
         // Show the search bar, header icons, and menu buttons
         searchbar.style.display = 'block';
